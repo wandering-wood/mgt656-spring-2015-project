@@ -123,8 +123,14 @@ function saveEvent(request, response){
       date:datestr,
       attending: []
     };
-    events.all.push(newEvent);
-    response.redirect('/events/'+newid);
+    events.addEvent(newEvent, function(err, result){
+      if (err) {
+        contextData.errors.push(err);
+        response.render('create-event.html', contextData);
+      } else {
+        response.redirect('/events/'+newid);
+      }
+    });
   }else{
     response.render('create-event.html', contextData);
   }
@@ -152,14 +158,19 @@ function rsvp (request, response){
   }
 
   if(validator.isEmail(request.body.email) && request.body.email.match(/([a-z0-9\.-_])+@yale.edu/i)){
-    ev.attending.push(request.body.email);
-    response.redirect('/events/' + ev.id);
+      events.addAttending(ev.id, request.body.email, function(err, result){
+        if (err) {
+          contextData.errors.push(err);
+          response.render('event-detail.html', contextData);
+        } else {
+          response.redirect('/events/' + ev.id);
+        }
+      });
   } else{
     var contextData = {errors: [], event: ev};
     contextData.errors.push('Invalid email or non-yale email address');
     response.render('event-detail.html', contextData);    
   }
-
 }
 
 /**
