@@ -5,14 +5,18 @@
     <ul>
       {% for report in reports %}
         <li class="report" id="report-{{report.id}}">
-          <a href ="/reports/{{report.id}}">Sprint {{report.id}} Report</a> .
+          <a href ="/reports/{{report.id}}">
+            {% if report.final %}
+              Final Report
+            {% else %}
+              Sprint {{report.id}} Report
+            {% endif %}
+          </a> .
           <time datetime="{{report.date}}">{{report.date|prettyDate}}</time>
         </li>
       {% endfor %}
     </ul>
   </div>
-
-
 {% endblock %}
 
 
