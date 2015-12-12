@@ -1,5 +1,6 @@
 body {
   padding: 50px;
+  list-style-type: none;
   text-align: center;
   font-family: Lato;
 	font-size: 25px;
@@ -7,6 +8,16 @@ body {
 	font-variant: normal;
 	font-weight: 500;
 	line-height: 26.4px;
+}
+
+.report-main {
+    text-align: left;
+}
+
+.report-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
 }
 
 .event-list {

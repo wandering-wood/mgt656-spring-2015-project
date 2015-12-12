@@ -12,7 +12,12 @@
 
 <div class="report-heading">
   <h1>Wandering Wood Coding Team</h1>
+
+{% if report.final %}
+  <h2>Final Report - SOM Class of 2016 & 2017 Party Central Website</h2>
+{% else %}
   <h2>Sprint Report #{{report.id}}</h2>
+{% endif %}
   <span id="date"><time datetime="{{report.date}}">{{report.date|prettyDate}}</time></span>
 </div>
 
@@ -37,7 +42,7 @@
       {% endif %}
       
       {% if section.image %}
-        <img id="image" src="{{section.image}}">
+        <img class="report-image" src="{{section.image}}">
       {% endif %}
       
       {% if section.link %}

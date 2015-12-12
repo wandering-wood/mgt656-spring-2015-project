@@ -283,6 +283,160 @@ var allReports = [
         ]
       }
     ]
+  },
+  {
+    id: 7,
+    final: true,
+    teammembers: [
+      {name: "Cheng Zhao", email: "cheng.zhao@yale.edu"},
+      {name: "David Mowat", email: "david.mowat@yale.edu"},
+      {name: "Nilofer Ahmed", email: "nilofer.ahmed@yale.edu"},
+      {name: "Stefan Bauer", email: "stefan.bauer@yale.edu"}
+      ],
+    date:   new Date(2015, 11, 11, 23,59, 59),
+    sections:[
+      {
+        title: "Application Description and Purpose",
+        paragraphs: ["The Wandering Wood Code team is creating an event management platform that will allow users to create and RSVP for upcoming events. Our goal is to create a more intuitive and user friendly version of of event management platforms than those currently on the market."],
+      },
+      {
+        title: "Coding Team Composition and Approach",
+        paragraphs: [
+          "The code .team is comprised of four second year MBA students at Yale SOM who have been immersed in coding for the semester. Cheng Zhao has extensive coding expertise and is leading our technical efforts with Nilofer Ahmed, Stefan Bauer and David Mowat contributing to the project. The Team is utilizing scrum methodology to ensure we deploy changes quickly and collaborate effectively."
+        ]
+      },
+      {
+        title: "Project Outcomes",
+        paragraphs: [
+          "Our team has successfully completed our project goals and the site meets all user story requirements including optional inclusion of database persistence.",
+          "The SOM Class of 2016 & 2017 Party Central website can be viewed at:"
+        ],
+        link: "https://mgt-656-wandering-wood.herokuapp.com/"
+      },
+      {
+        paragraphs: ["Additionally we have garnered interesting business insights which are discussed in detail below."]
+      },
+      {
+        title: "Business Analytics",
+        paragraphs: 
+        [
+          "AWe have been using Google Analytics to track traffic and to assess effectiveness of generating donations. Our analysis has focused on the following questions:"
+        ],
+        list: 
+        [
+          "How does our traffic breakdown across different segments and how do users flow through from landing to to donation?",
+          "Does making our event links on the home page include the word \"RSVP\" increase click-through rate?",
+          "Should we ask people to \"donate\" or \"support\" an event in the the donation link text to increase conversions?"
+        ]
+      },
+      {
+        title: "Question 1 - Traffic Breakdown",
+        paragraphs: 
+        [
+          "As of December 11, at 6PM, our site had a total of 12,707 views with 11,792 unique views. Our bounce rate was 87.4%:"
+        ],
+        image: "/images/ga7.png"
+      },
+      {
+        paragraphs:
+        [
+          "Of our unique visitor,our traffic sources broke down as follows:"
+        ],
+        image: "/images/pie7.png",
+      },
+      {
+        title: "What is Currently Functioning",
+        paragraphs: 
+        [
+          "Our site is currently functioning from a technical standpoint where it meets all critical functionality tests. We have also added some formatting elements to the homepage and created a logo to make the page more customized, but we have continued work to do on the look and feel of the site. We also have Google Analytics now functioning on the site. This enables us to analyze traffic coming to the site and will also enable us to see where the donations to events come from. This information will be valuable as as better understanding of what schools the majority of our target customers are affiliated with will enable more effective and targeted marketing.",
+          "From an aesthetics perspective, we have begun making use of Bootstrap more actively as a front end framework. While our site meets functional requirements and passes all the tests listed, its layout and design are sub-optimal at this time. To improve the website layout, we have begun using Bootstrap’s advanced grid system on all pages, with pre-sized rows and columns to house our content. This has greatly improved the viewability of the site on all devices, particularly mobile, as content is now better organized with consistent alignment. We are currently experiencing some challenges with consistent typography and style across the website - this will be added to the backlog for the next sprint and completed using a selection of related fonts and colour palettes."
+        ]
+      },
+      {
+        title: "Business Analytics",
+        paragraphs: 
+        [
+          "We have been using Google Analytics to track traffic and to assess effectiveness of generating donations. Thus far our traffic breaks down as follows: "
+        ],
+        image: "/images/pie6.png"
+      },
+      {
+        paragraphs: 
+        [
+          "We can see that our site’s primary user base is the School of Management with 61% of our traffic arriving from that school. It is interesting to note that Divinity students comprise 24% of our traffic which could indicate a desire amongst these students to cut loose at SOM related parties! We are only receiving 5% of our traffic from Yale Search which may indicate the need to optimize our search terms for their algorithm in order to increase user referral.",
+          "The bounce rate for those arriving from Yale Search was also the highest amongst our user base at 93.4%, which indicates the need to improve stickiness of the site for new users:"
+        ],
+        image: "/images/tbl7.png"
+      },
+      {
+        paragraphs: 
+        [
+          "The flow of users from arrival to donation breaks down as follows based on data gathered thus far:"
+        ],
+        list: 
+        [
+          "Landing page: 94.5% drop off",
+          "1st interaction: 97.5% drop off", 
+          "2nd interaction: 22% drop off - 78% donation conversion"
+        ],
+        image: "/images/flow7.png"
+      },
+      {
+        paragraphs: 
+        [
+          "From these statistics we can conclude that it is critical to move users through their first interaction on the site. If they move past this significant drop-off point we have a 78% donation conversion probability. Should this project continue into the future, our team will place high emphasis on lowering the bounce rate on landing and first interaction to move users through the traffic funnel. "
+        ]
+      },
+      {
+        title: "Question 2 - RSVP effectiveness",
+        paragraphs:
+        [
+          "To conduct A/B testing on whether the inclusion of the word “RSVP” would increase click-through rate, our team utilized a consistent URL with altered content while identifying variants within Google Analytics.",
+          "Definition of experiment conducted (images below)",
+          "Original page: Event name listed on home page",
+          "Variation to test: Include “RSVP to” before event name listed on home page"
+        ],
+        image: "/images/exp7.png"
+      },
+      {
+        paragraphs: 
+        [
+          "Results",
+          "The experiment was conducted over a 7 day period with 5,035 experiment sessions (i.e. visits), split roughly evenly between the original page and variation, with the following findings:"
+        ],
+        image: "/images/call7.png"
+      },
+      {
+        title: "Question 3 - “Donate” vs “Support”, is there a difference in terms of visitor response?",
+        paragraphs: 
+        [
+          "We wanted to find out if using a link with the terms “Please Donate” or “Support” had a meaningful difference in the terms of the site visitors’ response/donation rate. In a similar way to the RSVP test we ran, we conducted an A/B test through Google Analytics, that randomly changed the link to our donation page from either “Please Donate” or “Support.” This test sought to determine whether using a link that used the terms “Please Donate” or “Support” had a statistically significant difference in the conversion rate.",
+          "Definition of experiment conducted",
+          "Original page: Using the term “Please Donate”",
+          "Variation to test: Using the term “Support” ",
+          "Results",
+          "We ran the experiment for 3 days and obtained 131 experiment sessions, but the low number of aggregate conversions led to a result that was inconclusive. There were 8 total conversions, 6 of which were through the “Please Donate” link, and 2 of which were through the “Support” link. As it stands currently, Google Analytics ascribes a 24.4% probability that the “Please Donate” button produces a higher click through rate. To determine whether the difference is statistically significant, we will have to wait for more clicks throughs to the donation page."
+        ],
+        image: "/images/line7.png"
+      },
+      {
+        title: "Potential New Features",
+        paragraphs: 
+        [
+          "Additional features to incorporate that would enhance the functionality of the website for users could include:"
+        ],
+        list: 
+        [
+          "Social media: the addition of social media buttons for both current and prospective attendees to share the event within their network and increase viewership for the event. Create unique hashtags for each event that can accompany social media content.",
+          "User generated content: giving attendees the option to submit their own testimonials, pictures or videos to create a more interactive space",
+          "Filtering: the ability to search and sort through events by filtering for various criteria e.g. location, date, price, event type etc.",
+          "Promotional tools: easy tools to generate social marketing or online advertising as well as customized e-mail invitations from event description",
+          "Contact lists and CRM integration: ability to import contacts from e-mail address book or previous events as well as integration of contacts from applications like Salesforce and Microsoft Dynamics",
+          "Mobile app: Corresponding mobile app that users can download to show tickets and sign in to events as well as find and register for new events in their area",
+          "Create a community: Rather than just inviting users to register for events via the website, build a community where they create a user profile to join. This captures their contact information and extends the reach to engage and advertise events to them"
+        ]
+      }
+    ]
   }
 ];
 
