@@ -320,7 +320,7 @@ var allReports = [
         title: "Business Analytics",
         paragraphs: 
         [
-          "AWe have been using Google Analytics to track traffic and to assess effectiveness of generating donations. Our analysis has focused on the following questions:"
+          "We have been using Google Analytics to track traffic and to assess effectiveness of generating donations. Our analysis has focused on the following questions:"
         ],
         list: 
         [
@@ -343,22 +343,6 @@ var allReports = [
           "Of our unique visitor,our traffic sources broke down as follows:"
         ],
         image: "/images/pie7.png",
-      },
-      {
-        title: "What is Currently Functioning",
-        paragraphs: 
-        [
-          "Our site is currently functioning from a technical standpoint where it meets all critical functionality tests. We have also added some formatting elements to the homepage and created a logo to make the page more customized, but we have continued work to do on the look and feel of the site. We also have Google Analytics now functioning on the site. This enables us to analyze traffic coming to the site and will also enable us to see where the donations to events come from. This information will be valuable as as better understanding of what schools the majority of our target customers are affiliated with will enable more effective and targeted marketing.",
-          "From an aesthetics perspective, we have begun making use of Bootstrap more actively as a front end framework. While our site meets functional requirements and passes all the tests listed, its layout and design are sub-optimal at this time. To improve the website layout, we have begun using Bootstrap’s advanced grid system on all pages, with pre-sized rows and columns to house our content. This has greatly improved the viewability of the site on all devices, particularly mobile, as content is now better organized with consistent alignment. We are currently experiencing some challenges with consistent typography and style across the website - this will be added to the backlog for the next sprint and completed using a selection of related fonts and colour palettes."
-        ]
-      },
-      {
-        title: "Business Analytics",
-        paragraphs: 
-        [
-          "We have been using Google Analytics to track traffic and to assess effectiveness of generating donations. Thus far our traffic breaks down as follows: "
-        ],
-        image: "/images/pie6.png"
       },
       {
         paragraphs: 
